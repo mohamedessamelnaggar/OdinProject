@@ -1,0 +1,46 @@
+#container {
+    display: flex;
+    background-color: beige;
+    gap: 10px;
+    border-radius: 10px;
+
+}
+
+#addBook {
+    background-color: coral;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+
+}
+
+#bookList {
+    background-color: lightcoral;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+
+
+}
+
+#addForm {
+
+    border-radius: 10px;
+
+}
+
+#addForm input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    display: list-item;
+}
+
+ul li {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}

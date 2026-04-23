@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="background-color: brown; color: azure;text-align: center;padding: 30px;border-radius: 10px;">odin project assignment</h1>
+    <div id="container">
+        <div id="addBook">
+            <form action="" id="addForm">
+                <table id="addTable">
+                    <thead>
+                        <th>title</th>
+                        <th>author</th>
+                        <th>pages</th>
+                        <th>read</th>
+                        <th>addRow</th>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td><input type="text" name="title" placeholder="title"></td>
+                            <td><input type="text" name="author" placeholder="author"></td>
+                            <td><input type="number" name="pages" placeholder="pages"></td>
+                            <td><input type="checkbox" name="read"></td>  
+                            <td><button type="button" id="addRow" style="padding: 5px;background-color: goldenrod;border-radius: 5px;">Add Row</button></td>
+                        </tr>
+                    </tbody>
+                   
+                </table>
+                <button type="submit" style="padding: 5px;background-color: goldenrod;border-radius: 5px;">submit</button>
+            </form>
+        </div>
+        <div id="bookList" style="display: flex;flex-direction: column;">
+            <h1>Book List</h1>
+            <ul id="bookListUl"></ul>
+        </div>
+    </div>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
