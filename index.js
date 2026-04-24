@@ -35,12 +35,21 @@ function addBookToLibrary() {
 function displayBooks() {
     bookUl.innerHTML = "";
     Library.forEach((book , index) => {
+        const butonRemove = document.createElement("button");
+        butonRemove.textContent = "Remove";
         const li = document.createElement("li");
         li.textContent = `${book.title} by ${book.author}, ${book.pages} pages, ${book.read ? "read" : "not read yet"}`;
+        li.appendChild(butonRemove);
+        butonRemove.addEventListener("click" , function(e) {
+            e.preventDefault();
+            Library.splice(index , 1);
+            displayBooks();
+        })
         bookUl.appendChild(li);
     });
-
 }
+
+
 
 document.getElementById("addRow").addEventListener("click" , function(e) {
     const tbody = document.querySelector("#addTable tbody");
